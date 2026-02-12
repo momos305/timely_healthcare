@@ -1321,3 +1321,13 @@ header {
 .contact-form button:hover {
   opacity: 0.9;
 }
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .hero img {
+    width: 100%;
+  }
+}

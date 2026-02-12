@@ -30,11 +30,19 @@
 <body>
 
 <!-- ===== HEADER / NAVBAR ===== -->
+<!-- Header HTML -->
 <header>
   <div class="navbar-container">
     <a href="index.html">
       <img src="images/logo.png" alt="Timely Health Logo" class="nav-logo">
     </a>
+
+    <!-- Hamburger for mobile -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
     <nav>
       <ul class="nav-links">
@@ -47,6 +55,131 @@
     </nav>
   </div>
 </header>
+
+<!-- CSS -->
+<style>
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic Navbar */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff; /* change as needed */
+}
+
+.nav-logo {
+  height: 50px;
+  width: auto;
+}
+
+/* Navbar Links */
+nav {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000; /* change as needed */
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: #1d4ed8;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Book Appointment Button */
+.book-btn {
+  background-color: #1d4ed8;
+  color: #fff !important;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #000;
+  border-radius: 2px;
+}
+
+/* Media Queries */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 15px;
+  }
+  .nav-logo {
+    height: 45px;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #ddd;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+</style>
+
+<!-- JavaScript for Hamburger -->
+<script>
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('nav');
+
+hamburger.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
+</script>
+
 
     
 <!-- ===== HOME ===== -->
