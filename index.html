@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timely Health Care Hospital</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER / NAVBAR ===== -->
+<nav class="navbar">
+  <div class="logo"><a href="index.html">
+  <img src="images/logo.png" 
+       alt="Timely Health Logo"
+       style="height:60px;">
+</a>
+</div>
+
+  <!-- Desktop Navigation Links -->
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+    <li>
+      <a 
+        href="https://wa.me/919771369563?text=Hello%20I%20want%20to%20book%20an%20appointment" 
+        target="_blank" 
+        class="book-btn"
+      >
+        Book Appointment
+      </a>
+    </li>
+  </ul>
+
+  <!-- Menu Button for Mobile -->
+  <div class="menu-icon" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <!-- Dropdown Menu for Mobile -->
+  <div class="dropdown-menu" id="dropdownMenu">
+    <a href="#services">Services</a>
+    <a href="#process">Our Process</a>
+    <a href="#doctors">Doctors</a>
+    <a href="#testimonials">Testimonials</a>
+  </div>
+</nav>
+    
+<!-- ===== HOME ===== -->
+
+<script>
+  const homeSection = document.querySelector('#home');
+  const homeLink = document.querySelector('a[href="#home"]');
+
+  // Page load pe animation
+  window.addEventListener('load', () => {
+    homeSection.classList.add('show');
+  });
+
+  // Home pe click karne par animation
+  homeLink.addEventListener('click', () => {
+    homeSection.classList.remove('show');
+
+    setTimeout(() => {
+      homeSection.classList.add('show');
+    }, 150);
+  });
+</script>
+
+<section class="home" id="home">
+  <div class="home-content">
+    <h1>Welcome to Timely Health Care Hospital</h1>
+    <h3>Your Health, Our Priority</h3>
+
+    <p>
+      At Timely Health Care Hospital, we are committed to providing high-quality
+      medical care with compassion and integrity. Our experienced doctors,
+      advanced technology, and patient-first approach ensure the best treatment
+      for every patient.
+    </p>
+<br>
+<!-- 
+    <a href="#contact" class="btn">Book Appointment</a> -->
+
+     <a href="#contact" style="background-color:#1d4ed8; color:#fff;
+      padding:0.5rem 1.2rem; border-radius:5px; text-decoration:none;
+       font-weight:500; transition: background-color 0.3s, transform 0.2s;">
+       Book Appointment</a>
+      
+  </div>
+</section>
+
+
+<section class="about section" id="about">
+  <div class="about-container">
+
+    <!-- Image -->
+    <div class="about-image">
+      <img 
+        src="https://img.freepik.com/premium-photo/mid-section-female-doctor-taking-notes-using-digital-tablet-against-grey-background_13339-320854.jpg"
+        alt="Doctor consultation"
+      >
+    </div>
+
+    <!-- Content -->
+    <div class="about-text">
+      <span class="about-tag">About Our Hospital</span>
+      <h2>Trusted Healthcare, When You Need It Most</h2>
+      <p>
+        Timely Health makes quality healthcare easy and accessible.
+        We provide trusted medical services, timely appointments,
+        and personalized care to help you stay healthy and informed.
+      </p>
+
+      <ul class="about-points">
+        <li>Experienced & certified doctors</li>
+        <li>Modern medical facilities</li>
+        <li>Patient-first approach</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== ABOUT US ===== -->
+<section class="about" id="about">
+  <div class="about-container">
+
+    <div class="about-text">
+      <span class="about-badge">About Timely Health Care</span>
+
+      <h2>Who We Are</h2>
+      <p>
+        Timely Health Care Hospital is a multi-specialty healthcare center dedicated
+        to delivering affordable and reliable medical services. With a team of
+        skilled doctors, nurses, and support staff, we focus on patient safety,
+        comfort, and faster recovery.
+      </p>
+
+      <h3>Our Mission</h3>
+      <p>
+        To provide ethical, affordable, and high-quality healthcare services to
+        every patient.
+      </p>
+
+      <h3>Our Vision</h3>
+      <p>
+        To become a trusted healthcare partner for families by delivering
+        excellence in medical care and patient experience.
+      </p>
+    </div>
+
+    <div class="about-image">
+      <img
+        src="https://global.noharm.org/sites/default/files/styles/1920w/public/2024-03/Doctors_1.jpg?itok=TLmvjQb5"
+        alt="Healthcare professionals"
+      >
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+
+
+<section class="services" id="services">
+  <h2 style="text-align: center;">Our Services</h2>
+  <p class="process-subtitle">
+    We follow a simple and transparent services to ensure the best care for every patient.
+  </p>
+
+  <div class="service-grid">
+
+    <a href="services/general-medicine.html" class="service-card">
+      <i class="fa-solid fa-stethoscope"></i>
+      <p>General Medicine</p>
+    </a>
+
+    <a href="services/emergency.html" class="service-card">
+      <i class="fa-solid fa-truck-medical"></i>
+      <p>Emergency & Trauma Care (24/7)</p>
+    </a>
+
+    <a href="services/cardiology.html" class="service-card">
+      <i class="fa-solid fa-heart-pulse"></i>
+      <p>Cardiology</p>
+    </a>
+
+    <a href="services/orthopedics.html" class="service-card">
+      <i class="fa-solid fa-bone"></i>
+      <p>Orthopedics</p>
+    </a>
+
+    <a href="services/gynecology.html" class="service-card">
+      <i class="fa-solid fa-person-pregnant"></i>
+      <p>Gynecology & Maternity Care</p>
+    </a>
+
+    <a href="services/pediatrics.html" class="service-card">
+      <i class="fa-solid fa-baby"></i>
+      <p>Pediatrics</p>
+    </a>
+
+    <a href="services/diagnostics.html" class="service-card">
+      <i class="fa-solid fa-flask"></i>
+      <p>Diagnostics & Laboratory Services</p>
+    </a>
+
+    <a href="services/pharmacy.html" class="service-card">
+      <i class="fa-solid fa-pills"></i>
+      <p>Pharmacy Services</p>
+    </a>
+
+  </div>
+</section>
+
+
+<!-- ===== OUR PROCESS ===== -->
+<section class="process" id="process">
+  <h2 style="text-align: center;">Our Process</h2>
+  <p class="process-subtitle">
+    We follow a simple and transparent process to ensure the best care for every patient.
+  </p>
+
+  <div class="process-grid">
+    <div class="process-card">
+      <i class="fa-solid fa-calendar-check"></i>
+      <h3>Appointment Booking</h3>
+      <p>
+        Book an appointment online or visit our hospital directly
+        at your convenience.
+      </p>
+    </div>
+
+    <div class="process-card">
+      <i class="fa-solid fa-user-doctor"></i>
+      <h3>Doctor Consultation</h3>
+      <p>
+        Get expert consultation from our qualified and experienced doctors.
+      </p>
+    </div>
+
+    <div class="process-card">
+      <i class="fa-solid fa-microscope"></i>
+      <h3>Diagnosis & Tests</h3>
+      <p>
+        Advanced laboratory and diagnostic services for accurate results.
+      </p>
+    </div>
+
+    <div class="process-card">
+      <i class="fa-solid fa-notes-medical"></i>
+      <h3>Treatment & Care</h3>
+      <p>
+        Personalized treatment plans with continuous medical care.
+      </p>
+    </div>
+
+    <div class="process-card">
+      <i class="fa-solid fa-hand-holding-heart"></i>
+      <h3>Recovery & Follow-up</h3>
+      <p>
+        Post-treatment support and regular follow-ups for complete recovery.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== WHY CHOOSE US ===== -->
+<section class="why-choose">
+  <h2>Why Choose Us</h2>
+  <p class="why-subtitle">
+    We are committed to delivering quality healthcare with trust,
+    safety, and compassion.
+  </p>
+
+  <div class="why-grid">
+    <div class="why-card">
+      <i class="fa-solid fa-user-doctor"></i>
+      <p>Experienced & Certified Doctors</p>
+    </div>
+
+    <div class="why-card">
+      <i class="fa-solid fa-clock"></i>
+      <p>24/7 Emergency Services</p>
+    </div>
+
+    <div class="why-card">
+      <i class="fa-solid fa-heart-pulse"></i>
+      <p>Modern Medical Equipment</p>
+    </div>
+
+    <div class="why-card">
+      <i class="fa-solid fa-shield-heart"></i>
+      <p>Clean & Safe Environment</p>
+    </div>
+
+    <div class="why-card">
+      <i class="fa-solid fa-wallet"></i>
+      <p>Affordable Treatment Costs</p>
+    </div>
+
+    <div class="why-card">
+      <i class="fa-solid fa-hand-holding-heart"></i>
+      <p>Patient-Centered Care</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials" id="testimonials">
+  <h2>Patient Testimonials</h2>
+  <p class="testimonials-subtitle">
+    Hear what our patients say about their experience with us.
+  </p>
+
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <i class="fa-solid fa-quote-left"></i>
+      <p>
+        Excellent service and caring doctors. The staff treated me like family.
+        Highly recommended.
+      </p>
+      <h4>Ramesh Kumar</h4>
+    </div>
+
+    <div class="testimonial-card">
+      <i class="fa-solid fa-quote-left"></i>
+      <p>
+        Very clean hospital and well-experienced doctors. My treatment was smooth
+        and affordable.
+      </p>
+      <h4>Anjali Sharma</h4>
+    </div>
+
+    <div class="testimonial-card">
+      <i class="fa-solid fa-quote-left"></i>
+      <p>
+        Quick emergency response and professional care. Thank you Timely Health
+        Care team.
+      </p>
+      <h4>Suresh Patel</h4>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DOCTORS ===== -->
+<section class="doctors" id="doctors">
+  <h2>Our Doctors</h2>
+  <p class="doctors-subtitle">
+    Our team of experienced and dedicated doctors is committed
+    to providing the best medical care.
+  </p>
+
+  <div class="doctor-grid">
+    <div class="doctor-card">
+      <img style="border-radius: 5px;" src="https://images.pexels.com/photos/8460157/pexels-photo-8460157.jpeg" alt="Doctor">
+      <h3>Dr. Rahul Mehta</h3>
+      <p>Cardiologist</p>
+    </div>
+
+    <div class="doctor-card">
+      <img style="border-radius: 5px;" src="https://images.pexels.com/photos/5327580/pexels-photo-5327580.jpeg" alt="Doctor">
+      <h3>Dr. Ananya Sharma</h3>
+      <p>Gynecologist</p>
+    </div>
+
+    <div class="doctor-card">
+      <img style="border-radius: 5px;" src="https://images.pexels.com/photos/8460090/pexels-photo-8460090.jpeg" alt="Doctor">
+      <h3>Dr. Amit Verma</h3>
+      <p>Orthopedic Specialist</p>
+    </div>
+  </div>
+</section>
+
+    <!-- ===== CONTACT US ===== -->
+
+<section class="contact" id="contact">
+  <div class="contact-container">
+
+    <!-- LEFT SIDE -->
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+
+      <p class="hospital-name">Timely Health Care Hospital</p>
+      <p>Near Main Road, Hyderabad, Telangana – 500001</p>
+
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Email:</strong> info@timelyhealthcare.com</p>
+
+      <!-- Google Map -->
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps?q=Hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="250"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE (Form same rahega) -->
+    <div class="contact-form">
+      <h3>Book Appointment</h3>
+
+      <form onsubmit="sendWhatsAppMessage(); return false;">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+
+        <select id="service" required>
+          <option value="">Select Service</option>
+          <option>General Consultation</option>
+          <option>Emergency Care</option>
+          <option>Lab Tests</option>
+          <option>Specialist Doctor</option>
+        </select>
+
+        <select id="process" required>
+          <option value="">Our Process</option>
+          <option>Online Appointment</option>
+          <option>Walk-in Consultation</option>
+          <option>Follow-up Treatment</option>
+        </select>
+
+        <textarea id="message" placeholder="Describe your problem" rows="4"></textarea>
+
+        <button type="submit">Book on WhatsApp</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== FOOTER ===== -->
+<!-- 
+<footer class="footer">
+  <p>© 2026 Timely Health Care Hospital. All Rights Reserved.</p>
+</footer> -->
+
+
+<!-- Footer Section -->
+<footer style="background-color: #888181; color: #000; padding: 40px 20px; font-family: Arial, sans-serif;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto; gap: 20px;">
+
+    <!-- Logo & Description (Left) -->
+    <div style="flex: 1; min-width: 250px; text-align: left;">
+      <h2 style="margin-bottom: 10px;">TIMELY HEALTH</h2>
+      <p>Care You Can Trust. Right Where You Are. We believe healthcare should be simple, local, and always within reach for everyone.</p>
+      <div style="margin-top: 10px; display: flex; gap: 10px; align-items: center;">
+        <!-- WhatsApp -->
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width:30px; height:30px;"></a>
+        <!-- Call/Phone -->
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Call" style="width:30px; height:30px;"></a>
+      </div>
+    </div>
+
+    <!-- Quick Links (Center) -->
+    <div style="flex: 1; min-width: 150px; text-align: center;">
+      <h3>Quick Links</h3>
+      <ul style="list-style: none; padding: 0; line-height: 2;">
+        <li><a href="#home" style="color: #000; text-decoration: none;">Home</a></li>
+        <li><a href="#services" style="color: #000; text-decoration: none;">Services</a></li>
+        <li><a href="#about" style="color: #000; text-decoration: none;">About Us</a></li>
+        <li><a href="#who-we-serve" style="color: #000; text-decoration: none;">Who We Serve</a></li>
+        <li><a href="#contact" style="color: #000; text-decoration: none;">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info (Right) -->
+    <div style="flex: 1; min-width: 200px; text-align: right;">
+      <h3>Contact Info</h3>
+      <p>📞 +91 9010481048</p>
+      <p>✉️ hello@timelyhealth.com</p>
+      <p>🌐 www.timelyhealth.in</p>
+      <p>📍 Hyderabad, India</p>
+      <div style="margin-top: 10px; display: flex; justify-content: flex-end; gap: 10px;">
+        <!-- Facebook -->
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" style="width:25px; height:25px;"></a>
+        <!-- Instagram -->
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" style="width:25px; height:25px;"></a>
+        <!-- LinkedIn -->
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width:25px; height:25px;"></a>
+        <!-- Twitter -->
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" style="width:25px; height:25px;"></a>
+      </div>
+    </div>
+
+  </div>
+  
+  <!-- Footer Bottom -->
+  <div style="text-align: center; margin-top: 30px; font-size: 14px;">
+    © 2024 Timely Health. All rights reserved.
+  </div>
+</footer>
+<script src="script.js"></script>
