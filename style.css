@@ -1077,3 +1077,247 @@ html {
     font-size: 24px;  /* optional, adjust size as needed */
 }
 
+/* Professional Navbar */
+header {
+  position: sticky;
+  top: 0;
+  background: #8a9598;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  padding: 10px 40px;
+  z-index: 100;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  height: 55px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #1d4ed8;
+}
+
+.book-btn {
+  background: #1d4ed8;
+  padding: 8px 18px;
+  border-radius: 6px;
+  color: white;
+}
+
+.book-btn:hover {
+  background: #163fa3;
+}
+
+/* ===== HERO SECTION ===== */
+
+.home {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+              url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.home-content {
+  max-width: 700px;
+}
+
+.home-content h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.home-content h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.home-content p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.hero-btn {
+  background-color: #1d4ed8;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #163fa3;
+}
+/* ===== SERVICES SECTION ===== */
+
+.services {
+  padding: 80px 10%;
+  background-color: #f5f7fa;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.process-subtitle {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.service-card {
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #222;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+  transition: 0.3s ease;
+}
+
+.service-card i {
+  font-size: 30px;
+  color: #1d4ed8;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.service-card p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== CONTACT SECTION ===== */
+
+.contact {
+  padding: 80px 10%;
+  background-color: #f5f7fa;
+}
+
+.contact-container {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-info h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.hospital-name {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.map {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* FORM */
+
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.contact-form h3 {
+  margin-bottom: 20px;
+  color: #1d4ed8;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #1d4ed8;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #25D366; /* WhatsApp green */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}

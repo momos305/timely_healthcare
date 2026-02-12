@@ -1,8 +1,22 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Timely Health Care Hospital</title> -->
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timely Health Care Hospital</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Your CSS File -->
+  <link rel="stylesheet" href="style.css">
+
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -16,43 +30,24 @@
 <body>
 
 <!-- ===== HEADER / NAVBAR ===== -->
-<nav class="navbar">
-  <div class="logo"><a href="index.html">
-  <img src="images/logo.png" 
-       alt="Timely Health Logo"
-       style="height:60px;">
-</a>
-</div>
+<header>
+  <div class="navbar-container">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Timely Health Logo" class="nav-logo">
+    </a>
 
-  <!-- Desktop Navigation Links -->
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About Us</a></li>
-    <li><a href="#contact">Contact Us</a></li>
-    <li>
-      <a 
-        href="https://wa.me/919771369563?text=Hello%20I%20want%20to%20book%20an%20appointment" 
-        target="_blank" 
-        class="book-btn"
-      >
-        Book Appointment
-      </a>
-    </li>
-  </ul>
-
-  <!-- Menu Button for Mobile -->
-  <div class="menu-icon" onclick="toggleMenu()">
-    ☰
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#contact" class="book-btn">Book Appointment</a></li>
+      </ul>
+    </nav>
   </div>
+</header>
 
-  <!-- Dropdown Menu for Mobile -->
-  <div class="dropdown-menu" id="dropdownMenu">
-    <a href="#services">Services</a>
-    <a href="#process">Our Process</a>
-    <a href="#doctors">Doctors</a>
-    <a href="#testimonials">Testimonials</a>
-  </div>
-</nav>
     
 <!-- ===== HOME ===== -->
 
@@ -74,29 +69,22 @@
     }, 150);
   });
 </script>
-
 <section class="home" id="home">
   <div class="home-content">
-    <h1>Welcome to Timely Health Care Hospital</h1>
+    <h1>Welcome to Timely Health Care</h1>
     <h3>Your Health, Our Priority</h3>
 
     <p>
-      At Timely Health Care Hospital, we are committed to providing high-quality
+      At Timely Health Care , we are committed to providing high-quality
       medical care with compassion and integrity. Our experienced doctors,
       advanced technology, and patient-first approach ensure the best treatment
       for every patient.
     </p>
-<br>
-<!-- 
-    <a href="#contact" class="btn">Book Appointment</a> -->
 
-     <a href="#contact" style="background-color:#1d4ed8; color:#fff;
-      padding:0.5rem 1.2rem; border-radius:5px; text-decoration:none;
-       font-weight:500; transition: background-color 0.3s, transform 0.2s;">
-       Book Appointment</a>
-      
+    <a href="#contact" class="hero-btn">Book Appointment</a>
   </div>
 </section>
+
 
 
 <section class="about section" id="about">

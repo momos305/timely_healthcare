@@ -158,25 +158,25 @@ const observer = new IntersectionObserver(
 
 sections.forEach(section => observer.observe(section));
 
-
 // ===== WhatsApp Message Function =====
 function sendWhatsAppMessage() {
-  const name = document.getElementById("name").value;
-  const phone = document.getElementById("phone").value;
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
   const service = document.getElementById("service").value;
   const process = document.getElementById("process").value;
-  const message = document.getElementById("message").value;
+  const message = document.getElementById("message").value.trim();
 
   const whatsappNumber = "919771369563";
 
   const text =
-    `Appointment Request:%0A%0A` +
-    `Name: ${name}%0A` +
-    `Phone: ${phone}%0A` +
-    `Service: ${service}%0A` +
-    `Process: ${process}%0A` +
+    `Appointment Request:\n\n` +
+    `Name: ${name}\n` +
+    `Phone: ${phone}\n` +
+    `Service: ${service}\n` +
+    `Process: ${process}\n` +
     `Message: ${message}`;
 
-  window.open(`https://wa.me/${whatsappNumber}?text=${text}`, "_blank");
-}
+  const encodedText = encodeURIComponent(text);
 
+  window.open(`https://wa.me/${whatsappNumber}?text=${encodedText}`, "_blank");
+}
